@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4a7c44;
+    position: fixed;
+    height: 70px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #f5f5dc;
+    display: flex;
+    align-items: center; 
+}
+
+
+.logo img {
+    height: 50px;
+    margin-top: 2px;
+    margin: 5px;
+    width: auto;  
+    object-fit: contain; 
+} 
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+
+nav ul li a:hover {
+    color: #556b2f;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #f5f5dc;
+    font-size: 30px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(gambar/a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+
+
+.hero .isi {
+    padding: 2rem 7%;
+    max-width: 60rem;
+}
+
+.hero .isi h1 {
+    font-size: 3.5em;
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(#3e4e26);
+    line-height: 1.2;
+}
+
+.hero .isi p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.tombol-selengkapnya {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a7c44;
+    /* Warna hijau yang cocok */
+    color: #f5f5dc;
+    /* Warna teks putih */
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tombol-selengkapnya:hover {
+    background-color: #556b2f;
+    /* Warna lebih gelap untuk hover */
+}
+
+/* About Section */
+.about {
+    padding: 5rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-image {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+/* About layanan */
+.layanan {
+    padding: 5rem 7% 1.4rem;
+    background-color: #4a7c44;
+    
+}
+
+.layanan h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-spacing: 4px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* About Produk */
+.produk {
+    padding: 5rem 7% 1.4rem;
+}
+.produk h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    
+}
+.grid-container {
+    width: calc(25% - 20px);;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+.grid-container p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+.grid-container img {
+        width: 100%; /* Gambar akan memenuhi lebar elemen induknya */
+        height: auto; /* Tinggi gambar akan disesuaikan secara otomatis */
+}
+.grid-container .pro-hias{
+    margin-top: 100px;
+}
+.grid-container .pro-hidro{
+    margin-top: 130px;
+}
+.grid-container .pro-herbal{
+    margin-top: 45px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 7% 1.4rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+}
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 40rem; 
+    text-align: center;
+    margin: 30px auto; 
+    padding: 10px; 
+    width: 50%; 
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem; 
+    border: 1px solid white;
+    padding-left: 0.3rem;
+}
+
+.contact .row form .input-group textarea {
+    width: 100%; 
+    height: 150px; 
+    padding: 1rem; 
+    font-size: 1.2rem; 
+    resize: vertical; 
+}
+
+.contact .row form .btn {
+    display: block;
+    margin: 2rem 0 0 auto; 
+    padding: 0.7rem 1.5rem; 
+    font-size: 1.1rem; 
+    cursor: pointer;
+    text-align: left; 
+    background-color: #4a7c44;
+    color: white;
+}
+
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem; 
+    font-size: 1.2rem; 
+    background: none;
+}
+
+/* footer */
+footer{
+    background-color: #4a7c44;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    
+}
+footer .social{
+    padding: 1rem 0;
+
+}
+footer .social a{
+    color: white;
+    margin: 1rem;
+}
+footer .social a:hover,
+footer .links a:hover {
+    color: black;
+}
+
+footer .links a {
+    color: white;
+    padding: 0.7rem 1rem ;
+}
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #6a9156;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-image img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .about .row .content p {
+        margin-top: 1.6rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #6a9156;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #6a9156;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+}

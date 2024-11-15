@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibitTani</title>
+    <link href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="gambar/logo.png" alt="logo" class="hero-logo">
+                <h1>BibitTani</h1>
+            </div>
+            <ul id="menuList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#layanan">Services</a></li>
+                <li><a href="#produk">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <main class="isi">
+                <h1>Panen Lebih Baik, Hasil Lebih Melimpah</h1>
+                <p> BibitTani adalah perusahaan yang bergerak di bidang penyediaan benih dan bibit tanaman berkualitas
+                    tinggi.</p>
+                <a href="#about" class="tombol-selengkapnya">Lihat Selengkapnya</a>
+            </main>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Tentang Kami</h2>
+            <div class="row">
+                <div class="about-img">
+                    <img src="gambar/about.jpg" alt="about">
+                </div>
+                <div class="content">
+                    <h3>Kenapa Memilih BibitTani ?</h3>
+                    <p>BibitTani adalah perusahaan yang berfokus pada penyediaan benih dan bibit tanaman berkualitas
+                        tinggi
+                        untuk
+                        memenuhi kebutuhan pertanian, perkebunan, dan hobi berkebun di Indonesia. Kami hadir sebagai
+                        solusi
+                        terpercaya bagi para petani, pengusaha agribisnis, serta pecinta tanaman yang membutuhkan benih
+                        dan
+                        bibit
+                        unggul untuk berbagai keperluan. Dengan pengalaman dan keahlian di bidang pertanian, kami
+                        berkomitmen untuk
+                        mendukung pertumbuhan sektor pertanian Indonesia yang berkelanjutan dan ramah lingkungan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="layanan">
+            <h2>Layanan Kami</h2>
+            <table class="warna" border="1" width="800" height="80">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Nama Layanan</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>Konsultasi Pertanian</td>
+                        <td>Layanan konsultasi khusus untuk petani dan pebisnis pertanian yang membutuhkan saran dalam
+                            pemilihan
+                            bibit, teknik penanaman, hingga cara meningkatkan hasil panen. Tim kami terdiri dari para
+                            ahli
+                            pertanian yang siap membantu Anda.</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td>Pelatihan Budidaya</td>
+                        <td>Kami menyelenggarakan pelatihan untuk meningkatkan keterampilan petani dalam budidaya
+                            tanaman,
+                            termasuk teknik organik, hidroponik, dan metode pertanian berkelanjutan.</td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td>Pengemasan dan Pengiriman Aman</td>
+                        <td>BibitTani menawarkan layanan pengiriman produk ke seluruh Indonesia. Produk dikemas dengan
+                            standar
+                            khusus untuk menjaga kualitas benih dan bibit hingga sampai ke tangan pelanggan.</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Layanan Pemesanan Grosir</td>
+                        <td>Untuk Anda yang membutuhkan benih dan bibit dalam jumlah besar, kami menyediakan layanan
+                            pemesanan
+                            grosir dengan harga khusus dan pengiriman yang cepat.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="produk" class="produk">
+            <h2>Produk Kami</h2>
+            <div class="grid">
+                <div class="grid-container">
+                    <img src="gambar/benih.png" alt="benih pangan">
+                    <div class="pro">
+                        <h3>Benih Pangan</h3>
+                        <p>Benih tanaman pangan berkualitas seperti padi, jagung, kacang-kacangan, dan sayuran.
+                            Dirancang
+                            untuk memberikan hasil yang optimal dengan ketahanan terhadap hama dan penyakit.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <img src="gambar/hias.jpg" alt="bibit tanaman hias">
+                    <div class="pro-hias">
+                        <h3>Bibit Tanaman Hias</h3>
+                        <p>Bibit tanaman hias indoor dan outdoor, seperti bunga, tanaman bonsai, dan tanaman hias unik
+                            lainnya.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <img src="gambar/herbal.jpg" alt="tanaman herbal">
+                    <div class="pro-herbal">
+                        <h3>Bibit Tanaman Herbal dan Obat</h3>
+                        <p>Menyediakan bibit tanaman obat seperti jahe, kunyit, temulawak, dan lainnya yang bermanfaat
+                            untuk
+                            kesehatan.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <img src="gambar/hidroponik.png" alt="benih hidroponik">
+                    <div class="pro-hidro">
+                        <h3>Benih dan Bibit untuk Pertanian Hidroponik</h3>
+                        <p>Bibit dan benih khusus untuk sistem hidroponik, termasuk sayuran dan tanaman daun hijau yang
+                            populer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Kontak Kami</h2>
+
+            <div class="row">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.98371950261!2d110.33364487873297!3d-7.803163418748202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1731508894215!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+                <form action="">
+                    <div class="input-group">
+                        <label for="nama">Nama :</label>
+                        <input type="text" placeholder="nama">
+                    </div>
+                    <div class="input-group">
+                        <label for="Email">Email :</label>
+                        <input type="text" placeholder="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea name="pesan" id="pesan"></textarea>
+                    </div>
+                    <button type="submit" class="btn">kirim pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+
+        a>
+            <a href="#about">About</a>
+            <a href="#layanan">Services</a><div class="links">
+            <a href="#home">Home</
+            <a href="#produk">Product</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script> 
+    <script>feather.replace();</script>
+</body>
+
+</html>
